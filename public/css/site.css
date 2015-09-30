@@ -1,0 +1,83 @@
+
+/*single line comment*/
+
+/*
+
+Pattern of style definition
+selector {
+	property1: value1;
+	property2:value2;
+
+}
+
+*/
+body {
+	background-image: url(/img/fatcat.gif);
+	background-repeat:repeat;
+	background-attachment:fixed;
+	font-family:Helvetica, Arial, Sans-Serif;
+	text-align: center;
+	color: yellow;
+	margin: auto;
+    width: 60%;
+    border:3px solid #8AC007;
+    padding: 10px;
+}
+
+h1 {
+	color: green;
+	text-align: center;
+	text-decoration: underline;
+}
+
+h2 {
+	color: olive;
+	text-decoration:underline;
+	text-align: center;
+}
+
+ol{
+	list-style: upper-roman;
+	text-align: center;
+}
+
+ul{
+	list-style:square;
+}
+table, th, td {
+	border: 2px solid black;
+	text-align: center;	
+	margin: auto;
+    width: 60%;
+    border:3px solid #8AC007;
+    padding: 10px;
+}
+th {
+	background-color:green;
+	color:white;
+	opacity: 0.8;
+}
+td {
+	background-color:green;
+	color:white;
+	opacity: 0.8;
+}
+
+.introduction {
+	text-align: center;
+	color: green;
+}
+
+#wrapper {
+	background-color:black;
+	opacity:.7;
+	max-width: 400px;
+	margin: auto;
+    width: 60%;
+    border:3px solid #8AC007;
+    padding: 10px;
+}
+
+#questions {
+	text-decoration: underline;
+}

@@ -1,0 +1,59 @@
+
+h1 {
+	color:purple;
+	text-decoration: underline;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+.ribbon {
+	position:fixed;
+	top: 0px;
+	right: 0px;
+}
+
+div {
+	height:50px;
+	width: 50px;
+	border: 1px solid black;
+	float: left;
+	margin: 0px 50px 50px 0;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+}
+
+div:nth-child(2n+1) {
+	clear:both;
+}
+
+.arrow {
+	position: relative;
+	top: -100px;
+	left: 35px;
+}
+
+.red {
+	background-color: red;
+
+}
+.orange {
+	background-color: orange;
+	
+}
+.yellow {
+	background-color: yellow;
+
+}
+.green {
+	background-color: green;
+}
+
+.blue {
+	background-color: blue;
+	
+}
+
+.purple {
+	background-color: purple;
+}

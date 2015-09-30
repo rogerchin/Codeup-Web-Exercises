@@ -1,0 +1,209 @@
+h1 {
+	text-decoration: underline;
+	text-align: center;
+}
+
+body {
+	background-image: url("/img/concrete_seamless.png");
+}
+
+.Texas {
+	width: 700px;
+	height: 400px;
+	border: 1px solid black;
+	background-color:red;
+}
+
+#blue {
+	width:250px;
+	height:400px;
+	position: relative;
+	top:0px;
+	left:0px;
+	background-color: blue;
+	clear: left;
+	float: left;
+
+}
+
+#white {
+	width: 450px;
+	height: 200px;
+	position: relative;
+	top:0px;
+	right:0px;
+	background-color: white;
+	float:right;
+	clear:left;
+}
+
+#star-five {
+   margin: 160px 0px 0px 23px;
+   position: relative;
+   display: block;
+   color: white;
+   width: 0px;
+   height: 0px;
+   border-right:  100px solid transparent;
+   border-bottom: 70px  solid white;
+   border-left:   100px solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+}
+#star-five:before {
+   border-bottom: 80px solid white;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -45px;
+   left: -65px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+
+}
+#star-five:after {
+   position: absolute;
+   display: block;
+   color: white;
+   top: 3px;
+   left: -105px;
+   width: 0px;
+   height: 0px;
+   border-right: 100px solid transparent;
+   border-bottom: 70px solid white;
+   border-left: 100px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+}
+
+.Japan {
+	width: 700px;
+	height: 400px;
+	border: 1px solid black;
+	background-color: white;
+}
+
+#redcircle {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	background-color: red;
+	border-radius: 50%;
+	margin-top:75px;
+
+}
+
+.france {
+	height: 400px;
+	width: 700px;
+	border: 1px solid black;
+	background-color: white;
+}
+#bluefrance {
+	position: relative;
+	height: 100%;
+	width: 33%;
+	float: right;
+	clear: right;
+	background-color: blue;
+}
+#redfrance {
+	position: relative;
+	height: 100%;
+	width: 33%;
+	float: left;
+	background-color: red;
+}
+
+.arabrevolt {
+	width: 700px;
+	height: 400px;
+	border: 1px solid black;
+	background-color: green;
+	position: relative;
+}
+
+#trianglered {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 200px solid transparent;
+	border-left: 400px solid red;
+	border-bottom: 200px solid transparent;
+	float: left;
+	clear: both;
+	top:0px;
+	left:0px;
+}
+
+#arblack {
+	width: 100%;
+	height: 33%;
+	position: relative;
+	top: 0px;
+	background-color: black;
+}
+#arwhite {
+	width: 100%;
+	height: 33%;
+	position: relative;
+	bottom: 0px;
+	background-color: white;
+}
+
+.antartica {
+	width: 700px;
+	height: 400px;
+	border: 1px solid black;
+	background-color: yellow;
+	overflow: hidden;
+}
+
+#topleft {
+	position: relative;
+	background-color: blue;
+	width: 35%;
+	height: 45%;
+	float: left;
+}
+
+#bottomleft {
+	position: relative;
+	background-color: blue;
+	width: 35%;
+	height: 45%;
+	float: left;
+	clear: left;
+	bottom: 0px;
+	left: 0px;
+	margin-top: 60px;
+}
+#topright {
+	position: relative;
+	width: 55%;
+	height: 45%;
+	background-color: blue;
+	float: right;
+	clear: right;
+	top: -180px;
+}
+#bottomright {
+	position: relative;
+	width: 55%;
+	height: 45%;
+	background-color: blue;
+	float: right;
+	clear: both;
+	margin-top:-180px;
+}
