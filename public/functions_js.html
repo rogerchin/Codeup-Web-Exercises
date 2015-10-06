@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Functions JS</title>
+	</head>
+	<body>
+		<script>
+			var fname = 'Roger';
+			function sayHello() {
+				console.log('Hello '+fname)
+			}
+			sayHello(fname);
+
+			var random =  Math.floor((Math.random()*100)+1);
+
+			function isOdd(input) {
+				var remainder = input % 2;
+				if (remainder === 0) {
+					return console.log(random+' is even');
+				} else {
+					return console.log(random+' is odd');
+				}
+			}	
+			
+			isOdd(random);
+			
+			function rectangle(l,w) {
+				var result = l * w;
+				return console.log('Rectangle Area is '+result)
+			}
+
+			function triangle(b,h) {
+				var result = 1/2 * b * h;
+				return console.log('Triangle Area is '+result)
+			}
+
+			function circle(r) {
+				var result = Math.PI * r * r
+				return console.log('Circle Area is '+result)
+			}
+
+			function circleperimeter(radius) {
+				var result = 2 * Math.PI * radius;
+				return console.log('Perimeter of circle is :'+result)
+			}
+
+			function areainarea(input1,input2) {
+				var result = input1 - input2;
+				return console.log('Area of Rectangle minus Triangle is: '+result)
+			}
+			
+			function starofdavid(a) {
+				var result = 12 * Math.sqrt(3)/4*Math.pow(a,2);
+					return console.log('Area of the Star of David is '+result)
+			}
+			starofdavid(4);
+
+
+		</script>
+	</body>
+</html>
