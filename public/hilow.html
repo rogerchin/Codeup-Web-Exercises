@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>High or Low</title>
+	</head>
+	<body>
+		<h1>Are you high? or Are you low?</h1>
+		<script>
+			(function() {
+
+				function getRandomNumber() {
+					var rand = Math.floor((Math.random()*50)+1);
+					return rand;
+				}
+
+				function playAgain() {
+					var answer = prompt('Do you want to play again?');
+					return answer;
+				}
+
+				function getGuess() {
+					var guess = prompt('Please enter your guess between 1 and 50');
+					return guess;
+
+				}
+
+				function isValidGuess(guess) {
+					
+					var parsedGuess = parseInt(guess);
+					//If parsedGuess is not a number, then return false;
+					if(isNaN(parsedGuess)) {
+						return false;
+					} else {
+						return true;
+					}
+				}
+
+				function getValidGuess() {
+					do {
+						var guess = getGuess();
+
+					} while(isValidGuess(guess) == false);
+
+					return guess;
+				}
+
+				function playGame() {
+					var random = getRandomNumber();
+					console.log(random);
+
+					do {
+
+						var guess = getValidGuess();
+
+						if(guess == random) {
+							console.log('You did it!');
+							var answer = playAgain();
+							
+
+						} else if(guess > random) {
+							alert('Too HIGH!');
+						} else if(guess < random) {
+							alert('Too Low!');
+						}
+
+					} while (random != guess);
+				}
+
+				do {
+					playGame();
+					var replay = playAgain();
+				} while(replay);
+
+			})();
+ 		</script>	
+	</body>
+</html>
