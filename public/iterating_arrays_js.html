@@ -7,10 +7,51 @@
 		<script>
 			var names = ['Michaelangelo','Robertangelo','Tomangelo','Bobangelo'];
 			console.log(names.length);
-			console.log('The first name is '+ names[0]);
-			console.log('The second name is ' + names[1]);
-			console.log('The third name is '+ names[2]);
-			console.log('The fourth name is '+names[3]);
+			// console.log('The first name is '+ names[0]);
+			// console.log('The second name is ' + names[1]);
+			// console.log('The third name is '+ names[2]);
+			// console.log('The fourth name is '+names[3]);
+
+			for (var i = 0; i < names.length; i+=1) {
+				console.log('My name is '+names[i]);
+			}
+
+
+			names.forEach(function (element, index, array){
+				console.log('The name at index '+ index + ' is ' + element);
+
+			});
+
+
+
+
+			function iterateNames(element, index, array) {
+				console.log('The name at index '+index+' is '+element);
+			}
+
+			names.forEach(iterateNames);		
+		
+			var shapes = ['octagon', 'sphere', 'square', 'rectangle'];
+			
+			shapes.forEach(function (shape, index) {
+				console.log('The shape at index '+index+' is '+shape)
+
+			});	
+
+			var tacos = ['chorizo', 'picadillo','guacamole','norteno', 'barbacoa', 'fajita', '99 cent', 'not a real taco from taco bell', 'lengua'];
+			
+			tacos.forEach(function (taco, index,array) {
+				if(index > 0) {
+					console.log('The last taco I ate was a '+array[index -1]);
+				}
+
+				console.log('I am eating a '+taco+' taco');
+
+				if(index<array.length -1) {
+					console.log('I will eat a '+array[index + 1]+' taco next');
+				}
+				console.log('yum');
+			});
 		</script>
 
 	</body>
