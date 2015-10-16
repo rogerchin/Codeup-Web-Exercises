@@ -7,9 +7,9 @@
 
     <body>
         <section class="output">
-            <h1 class="fancy-header">GET</h1>
+            <h1>GET</h1>
             <?php var_dump($_GET); ?>
-            <h1 class="fancy-header">POST</h1>
+            <h1>POST</h1>
             <?php var_dump($_POST); ?>
         
         <section class="login">
