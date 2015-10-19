@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Konami Code</title>
+	</head>
+	<body>
+	    <h1>Konami Code</h1>
+
+	    <script src="/js/jquery.js"></script>
+	    <script>
+	        "use strict";
+
+	        $(document).ready(function() {
+				var guess = [];
+		        var answer = "38,38,40,40,37,39,37,39,66,65,13"
+
+					$(document).keyup(function(event){
+			            console.log(event.which);
+						if (event.which==38||event.which==40||event.which==37||event.which==39||event.which==66||event.which==65||event.which==13) {
+			                guess.push(event.which);
+						} else {
+							guess=[];
+							console.log('Wrong input, code has restarted');
+						}
+							
+			            
+						var guessString = guess.toString();
+			            console.log(guessString);
+			            
+						if (guess.length > 11){
+			            guess = [];
+						console.log('Konami code is incorrect')
+			            } 
+						
+
+			            if (guessString == answer){
+			            alert("You now have added 30 lives!!");
+			            guess = [];
+			            }
+
+			 		});
+			 	});
+	 
+	        
+
+
+
+
+	    </script>
+	</body>
+</html>

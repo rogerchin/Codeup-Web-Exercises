@@ -1,0 +1,75 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font: bold 14px Arial, sans-serif;
+}
+
+#calculator {
+	width: 350px;
+	height: auto;
+
+
+}
+.top .leftscreen {
+	margin: 10px 10px 0 10px;
+	height: 40px;
+	width: 75px;
+	float: left;
+	padding: 0 10px;
+	border: 1px solid black;
+
+}
+
+.top .middlescreen {
+	margin: 10px 10px;
+	height: 40px;
+	width: 40px;
+	border: 1px solid black;
+	float: left;
+	padding:0 10px;
+}
+
+.top .rightscreen {
+	margin: 10px 10px;
+	height: 40px;
+	width: 75px;
+	padding:0 10px;
+	border: 1px solid black;
+	float: left;
+
+}
+
+.top .answer {
+	margin: 10px 10px;
+	height: 40px;
+	width: 75px;
+	padding: 0 10px;
+	border: 1px solid black;
+	float: left;
+}
+
+span {
+	float: left;
+	position: relative;
+	top: 0;
+	cursor: pointer;
+	width: 66px;
+	height: 36px;
+	border-radius: 3px;
+	margin: 10px 10px 10px 10px;
+	text-align: center;
+	line-height:36px;
+	border: 1px solid black;
+
+	user-select: none;
+
+}
+
+button {
+	width: 60px;
+	height: 30px;
+}
+
+.keys, .top {overflow: hidden;}

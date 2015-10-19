@@ -1,0 +1,15 @@
+button{
+	width: 90px;
+	float: left;
+	margin: 2px;
+	margin: 40px;
+
+}
+.calculator {
+	width: 400px;
+}
+
+input{
+	width: 33%;
+	float: left;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+    <h1>Konami Code</h1>
+
+    <script src="/js/jquery.js"></script>
+    <script>
+//         "use strict";
+//         var code = [];
+//         var answer = "38,38,40,40,37,39,37,39,65,66,13"
+// 		$(document).keyup(function(event){
+//             console.log(event.keyCode);
+//             code.push(event.keyCode);
+//             
+// 			var codeString = code.toString();
+//             console.log(codeString);
+//             
+// 			if (code.length > 11){
+//             code = [];
+//             }
+//             if (codeString == answer)
+//             {
+//             alert("You have added 30 lives!!!");
+//             code = [];
+//             }
+//  			});
+		
+		var code = [];
+		var answer = [38,38,40,40,37,39,37,39,66,65,13]
+
+		$(document).keyup(function(event){
+			console.log(event.which);
+			if (event.which==38||event.which==40||event.which==37||event.which==39||event.which==66||event.which==65||event.which==13) {
+			    code.push(event.which);
+				} else {
+					code=[];
+					console.log('Wrong input, code has restarted');
+				}
+
+			if(code[code.length-1]!=answer[code.length-1]) {
+				code = [];
+			}
+
+			if (code.length == answer.length) {
+				alert('You have added 30 lives')
+			}
+
+
+			
+
+
+
+
+
+		});
+    </script>
+</body>
+</html>

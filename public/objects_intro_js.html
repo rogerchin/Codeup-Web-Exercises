@@ -1,0 +1,21 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Objects Intro JS</title>
+	</head>
+	<body>
+
+		<script>
+			var person  = {};
+			person.firstName = 'Bob'
+			person.lastName = 'the Builder'
+
+			person.sayHello = function() {
+				console.log(this.firstName + ' ' + this.lastName + ' says Hello Everybody!')
+			};
+
+			person.sayHello();
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Objects JSON</title>
+	</head>
+	<body>
+		<script>
+		"use strict";
+
+		var books = [{
+			"title": "The Fault in our Stars",
+
+			"author": {
+				"firstName":"John",
+				"lastName": "Green"
+				}
+
+			}
+
+			{
+			"title": "The Fault in our Stars",
+
+			"author": {
+				"firstName":"John",
+				"lastName": "Green"
+				}
+			}
+
+			{
+			"title": "The Fault in our Stars",
+
+			"author": {
+				"firstName":"John",
+				"lastName": "Green"
+				}
+
+			}
+
+		}];
+
+		var cars = 
+
+		function getYear(car) {
+			return car.year;
+		}
+
+		var getYear = function(car) {
+			return car.year;
+		}
+
+		var app = {
+			"cars": [{
+				"make": "Hyundai",
+				"model":"Accent",
+				"year":"2006",
+				},
+				{
+				"make":"Buick",
+				"model":"Skylark",
+				"year":"1987",
+				}]
+				"getYear": function(car) {
+					return car.year;
+				}
+				"honkHorn": function() {
+					alert('HONK HONK!');
+				}
+			};
+
+			function getYear(calender) {
+				return calender.year;
+			}
+		})();
+
+
+		books.forEach(function(book, index){
+			console.log("Book #" + (index+1));
+			console.log("Title" + book.title);
+			console.log("Author"+ book.author.firstName + " " + book.author.lastName)
+			console.log("------------")
+		});
+
+		</script>
+
+	</body>
+</html>
