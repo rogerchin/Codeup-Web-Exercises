@@ -1,0 +1,26 @@
+.head {
+	margin: 0 auto;
+	text-align: center;
+}
+.weather {
+	width: 70%;
+	position: relative;
+	text-align: center;
+	margin: 0 15% 0 15%;
+}
+
+.block {
+	width: 23.3%;
+	height: 300px;
+	border: 1px solid black;
+	display: inline-block;
+	margin: 10px;
+	background: silver;
+	border-radius: 40px;
+}
+
+#map-canvas {
+	margin: 10px auto;
+    width: 770px;
+    height: 481px;
+}

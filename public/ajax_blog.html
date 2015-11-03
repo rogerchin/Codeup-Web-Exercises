@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Blog</title>
+		<meta charset="UTF-8">
+	    <link rel="stylesheet" href="/css/bootstrap.css">
+	    <link rel="stylesheet" href="/css/blog.css">
+	    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	    <script src="/js/bootstrap.js"></script>
+	</head>
+
+	<body>
+
+		<div class="page-header" id="header"><h1>My Blog</h1></div>
+		<div id="posts"></div>
+
+		<script>
+		$.ajax("/data/blog.json");
+
+		function updateBlog() {
+			$.get("/data/blog.json").done(function (data){
+				var outputString = "";
+				data.forEach(function (name){
+					outputString += '<h3>' + name.title + '</h3>' + '<span>posted on: </span>' + name.date + '<hr>' + name.content + '<br><br>' + '<strong>Categories: </strong>' + name.categories;
+				});
+				
+				$('#posts').html(outputString);
+			});		
+
+		};
+
+		updateBlog();
+
+		</script>
+	</body>
+</html>
