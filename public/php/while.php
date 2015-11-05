@@ -7,4 +7,13 @@ while ($test <= 15){
 	$test++;
 }
 
+
+$evenNum = 0;
+
+while ($evenNum <= 100){
+	if ($evenNum % 2 == 0){
+		echo "$evenNum \n";	
+	}
+	$evenNum++;
+}
 ?>
