@@ -2,6 +2,12 @@
 
 $things = array('Sgt. Pepper', "11", null, array(1,2,3), 3.14, "12 + 7", false, (string) 11);
 
+foreach($things as $thingy) {
+	if(is_string($thingy)){
+		
+	}
+}
+
 foreach ($things as $thingy) {
 	if(is_int($thingy)) {
 		echo "{$thingy} is a integer" . PHP_EOL;

@@ -22,15 +22,15 @@ echo "Hello World \n";
      echo "$b is less than or equal to $c\n";
  }
 
- if ($b == $c) {
+ if ($b === $c) {
      // output the appropriate result
-     echo "$b is equal to $c\n";
+     echo "$b is identical to $c\n";
  } elseif ($b === $c) {
      // output the appropriate result
      echo "$b is equal to $c\n";
  } elseif ($b != $c) {
      echo "$b is not equal to $c\n";
- } else {
+ } elseif ($b !== $c) {
      echo "$b is not identical to $c\n";
  }
 
