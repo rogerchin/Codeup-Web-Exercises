@@ -1,0 +1,24 @@
+This is an info message.
+This is an info message.
+This is an info message.
+This is an info message.
+This is an info message.
+This is an info message.
+This is an info message.
+This is an info message.
+This is an info message.
+This is an info message.
+2015-11-12  17:09:43 INFOThis is an info message.
+2015-11-12  17:09:43 ERRORThis is an info message.
+2015-11-12  17:10:33 INFOThis is an info message.
+2015-11-12  17:10:33 ERRORThis is an info message.
+2015-11-12  17:10:45 INFO This is an info message.
+2015-11-12  17:10:45 ERROR This is an info message.
+2015-11-12  17:21:08 INFO This is an info message.
+2015-11-12  17:21:08 ERROR This is an info message.
+2015-11-12  17:21:45 [INFO] This is an info message.
+2015-11-12  17:21:45 [ERROR] This is an info message.
+2015-11-12  17:28:48 [INFO] This is an info message
+2015-11-12  17:28:48 [ERROR] This is an info message.
+2015-11-12  17:29:59 [INFO] This is an info message
+2015-11-12  17:29:59 [Error] This is an error message.

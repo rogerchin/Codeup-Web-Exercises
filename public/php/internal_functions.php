@@ -4,9 +4,15 @@
 function inspect($element){
 	if(is_string($element)){
 		return "The string is '$element'." . PHP_EOL;
-	} else if(is_numeric($element)){
+	} else if(is_int($element)){
 		return "The num is '$element'." . PHP_EOL;
-	} 
+	} else if(is_null($element)){
+		return "The value is NULL";
+	} else if(is_array($element)){
+		return "The value is an Array";
+	} else if(is_bool($element)){
+		return "The value is $element";
+	}
 }
 
 // Do not mofify these variables!
@@ -34,18 +40,25 @@ echo 'Inspecting $num3:' . PHP_EOL;
 echo inspect($num3);
 
 echo 'Inspecting $num4:' . PHP_EOL;
+echo inspect($num4);
 
 echo 'Inspecting $null:' . PHP_EOL;
+echo inspect($null);
 
 echo 'Inspecting $bool1' . PHP_EOL;
+echo inspect($bool1);
 
 echo 'Inspecting $bool2' . PHP_EOL;
+echo inspect($bool2);
 
 echo 'Inspecting $string1' . PHP_EOL;
 echo inspect($string1);
 
 echo 'Inspecting $string2' . PHP_EOL;
+echo inspect($string2);
 
 echo 'Inspecting $array1' . PHP_EOL;
+echo inspect($array1);
 
 echo 'Inspecting $array2' . PHP_EOL;
+echo inspect($array2);
