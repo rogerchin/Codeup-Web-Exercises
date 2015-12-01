@@ -1,6 +1,10 @@
 <?php
 
-$counter = isset($_GET['counter']) ? $_GET['counter'] : 0;
+require_once 'input.php';
+
+// $counter = isset($_GET['counter']) ? $_GET['counter'] : 0;
+
+$counter = Input::has('counter') ? Input::get('counter') : 0;
 
 ?>
 

@@ -1,4 +1,5 @@
 <?php
+include('server-name-generator.php');
 
 $counter = isset($_GET['counter']) ? $_GET['counter'] : 0;
 
@@ -13,6 +14,7 @@ $counter = isset($_GET['counter']) ? $_GET['counter'] : 0;
 		<h1>Counter = <?= $counter ?></h1>
 		<a href="http://codeup.dev/php/counter.php?counter=<?=$counter+1?>">Up</a>
 		<a href="http://codeup.dev/php/counter.php?counter=<?=$counter-1?>">Down</a>
+		<a href="http://codeup.dev/php/counter.php">RESET</a>
 
 
 

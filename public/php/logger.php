@@ -8,10 +8,9 @@ function logMessage($logLevel, $message)
 
     $handle = fopen($filename, 'a');
     $formattedMessage = "{$todaysDate} {$todaysTime} [{$logLevel}] {$message}";
-    fwrite($handle, $formattedMessage . PHP_EOL);
-    fclose($handle);
+    
 }
-
+$
 function logInfo($message)
 {
 	logMessage("INFO", $message);
